@@ -204,7 +204,7 @@ header("Cache-Control: max-age=2592000");
                 <div class="attr-nav">
                     <ul>
                         <li class="search">
-                            <a href="shop-search.php">
+                            <a href="">
                                 <i class="fa fa-search">
                                     
                                 </i>
@@ -232,9 +232,10 @@ header("Cache-Control: max-age=2592000");
         <div class="container">
             <form action="shop-search.php"method="post">
             <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
                 <input type="text" class="form-control" name="tukhoa"placeholder="Click Enter để tìm kiếm">
-                <span class="input-group-addon close-search" type="submit"name="search_product"><i class="fa fa-times"></i></span>
+                <!-- <input class="input-group-addon" type="submit" name="search_product" value="Tìm kiếm  ">  -->
+                <button class="input-group-addon"type="submit" name="search_product"> <i class="fa fa-search"></i></button> <p></p>
+                <span class="input-group-addon close-search" style= "margin-left: 20px" ><i class="fa fa-times"></i></span>
             </div></form>
         </div>
     </div>

@@ -175,7 +175,7 @@ if (!isset($_GET['id'])) {
             } else {
             ?>
 
-                <div class="col-12 d-flex shopping-box"><a href="shop.php" class="ml-auto btn hvr-hover">Mua Hàng</a> </div>
+                <div class="col-12 d-flex shopping-box"><a href="login.php" class="ml-auto btn hvr-hover">Mua Hàng</a> </div>
             <?php
             }
             ?>

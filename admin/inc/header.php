@@ -80,7 +80,7 @@
             <ul class="nav main">
                 <li class="ic-dashboard"><a href="index.php"><span>Bảng Điều Khiển</span></a> </li>
                 <!-- <li class="ic-form-style"><a href="adminlist.php"><span>Thông tin ADMIN</span></a></li> -->
-				<li class="ic-typography"><a href="changepassword.php"><span>Thay Đổi Mật KHẩu</span></a></li>
+				<!-- <li class="ic-typography"><a href="changepassword.php"><span>Thay Đổi Mật KHẩu</span></a></li> -->
 				<!-- <li class="ic-grid-tables"><a href="inbox.php"><span>Hộp Thư</span></a></li> -->
                 <!-- <li class="ic-charts"><a href="Nhac_Cu_Viet/index.php"><span>Truy Cập Website</span></a></li> -->
             </ul>
