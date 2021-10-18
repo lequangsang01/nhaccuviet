@@ -38,20 +38,19 @@
                
                 <tr>
                     <td>
-                        <label>Tên Sản Phẩm</label>
+                        <label>Tên sản phẩm</label>
                     </td>
                     <td>
-                        <input type="text"  name="productName" value="<?php echo  $result_product['productName']?>" placeholder="Nhập tên sản phẩm" class="medium" />
-                        
+                        <input type="text"  name="productName" value="<?php echo  $result_product['productName']?>" class="medium" />
                     </td>
                 </tr>
 				<tr>
                     <td>
-                        <label>NHóm Sản Phẩm</label>
+                        <label>Nhóm sản phẩm</label>
                     </td>
                     <td>
                         <select id="select" name="category">
-                            <option>Chọn Nhóm Sản Phẩm</option>
+                            <option>Chọn nhóm sản phẩm</option>
                             <?php
                             $cat = new category();
                             $catlist = $cat->show_category();
@@ -79,29 +78,33 @@
                 </tr>
 				<tr>
                     <td>
-                        <label>Thương Hiệu</label>
+                        <label>Thương hiệu</label>
                     </td>
                     <td>
                         <select id="select" name="brand">
-                            <option>Chọn THương Hiệu</option>
+                            <option>Chọn thương hiệu</option>
 
                              <?php
                             $brand = new brand();
                             $brandlist = $brand->show_brand();
+
                             if($brandlist){
                                 while($result = $brandlist->fetch_assoc()){
                              ?>
-                            <option>
+
+                            <option
 
                             <?php
                             if($result['brandId']==$result_product['brandId']){ echo 'selected';  }
                             ?>
+
                              value="<?php echo $result['brandId'] ?>"><?php echo $result['brandName'] ?></option>
 
                                <?php
                                   }
                               }
                            ?>
+                           
                         </select>
                     </td>
                 </tr>
@@ -111,7 +114,7 @@
                         <label>Mô Tả</label>
                     </td>
                     <td>
-                    <textarea name="product_desc" class="tinymce"><?php echo $result_product['product_desc']?></textarea>
+                        <textarea name="product_desc" class="tinymce"><?php echo $result_product['product_desc'] ?></textarea>
                     </td>
                 </tr>
 				<tr>
@@ -125,7 +128,7 @@
             
                 <tr>
                     <td>
-                        <label>Ảnh Sản Phẩm</label>
+                        <label>Ảnh sản Phẩm</label>
                     </td>
                     <td>
                         <img src="uploads/<?php echo $result_product['image'] ?>" width="90"><br>
@@ -135,21 +138,21 @@
 				
 				<tr>
                     <td>
-                        <label>Loại Sản Phẩm</label>
+                        <label>Loại sản phẩm</label>
                     </td>
                     <td>
                         <select id="select" name="type">
-                            <option>Chọn Loại Sản Phẩm</option>
+                            <option>Select Type</option>
                             <?php
                             if($result_product['type']==0){
                             ?>
-                            <option selected value="0">Nổi Bật</option>
-                            <option value="1">Bình Thường</option>
+                            <option selected value="0">Nổi bật</option>
+                            <option value="1">Bình thường</option>
                             <?php
                         }else{
                             ?>
                             <option value="0">Nổi Bật</option>
-                            <option selected value="1">Bình Thường</option>
+                            <option selected value="1">Bình thường</option>
                             <?php
                             }
                             ?>

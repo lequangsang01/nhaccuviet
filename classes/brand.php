@@ -45,10 +45,22 @@
 			return $result;
 		}
 		public function get_product_by_brand($id){
-			$query = "SELECT * FROM tbl_product WHERE brandId='$id' order by brandId desc LIMIT 8";
+			$query = "SELECT * FROM tbl_product WHERE brandId='$id' order by brandId desc ";
 			$result = $this->db->select($query);
 			return $result;
 		}
+		public function getproduct_new($id){
+			$sp_tungtrang = 12;
+			if(!isset($_GET['trang'])){
+				$trang = 1;
+			}else{
+				$trang = $_GET['trang'];
+			}
+			$tung_trang = ($trang-1)*$sp_tungtrang;
+			$query = "SELECT * FROM tbl_product WHERE brandId='$id' order by productId desc LIMIT $tung_trang,$sp_tungtrang";
+			$result = $this->db->select($query);
+			return $result;
+		} 
 		public function get_name_by_brand($id){
 			$query = "SELECT tbl_product.*,tbl_brand.brandName,tbl_brand.brandId FROM tbl_product,tbl_brand WHERE tbl_product.brandId=tbl_brand.brandId AND tbl_brand.brandId ='$id' LIMIT 1";
 			$result = $this->db->select($query);

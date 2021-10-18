@@ -153,7 +153,24 @@
 			return $result;
 		}
 		public function get_product_by_cat($id){
-			$query = "SELECT * FROM tbl_product WHERE catId='$id' order by catId desc LIMIT 8";
+			$query = "SELECT * FROM tbl_product WHERE catId='$id' order by catId desc ";
+			$result = $this->db->select($query);
+			return $result;
+		}
+		public function getproduct_new_cat($id){
+			$sp_tungtrang = 12;
+			if(!isset($_GET['trang'])){
+				$trang = 1;
+			}else{
+				$trang = $_GET['trang'];
+			}
+			$tung_trang = ($trang-1)*$sp_tungtrang;
+			$query = "SELECT * FROM tbl_product WHERE catId='$id'  LIMIT $tung_trang,$sp_tungtrang";
+			$result = $this->db->select($query);
+			return $result;
+		} 
+		public function get_all_product_cat($id){
+			$query = "SELECT * FROM tbl_product WHERE catId='$id'";
 			$result = $this->db->select($query);
 			return $result;
 		}

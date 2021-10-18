@@ -64,8 +64,8 @@
                                 <div class="mask-icon">
                                     <ul>
 
-                                        <li><a href="cart.php" data-toggle="tooltip" data-placement="right" title="thêm vào giỏ hàng"> <i class="fa fa-shopping-bag"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào danh sách yêu thích"><i class="far fa-heart"></i></a></li>
+                                        <!-- <li><a href="cart.php" data-toggle="tooltip" data-placement="right" title="thêm vào giỏ hàng"> <i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào danh sách yêu thích"><i class="far fa-heart"></i></a></li> -->
                                     </ul>
                                     <a class="cart" href="shop-detail.php?proid=<?php echo $result['productId'] ?>">Xem chi tiết</a>
                                 </div>

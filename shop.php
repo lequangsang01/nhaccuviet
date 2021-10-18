@@ -101,7 +101,7 @@
                                                         <div class="mask-icon">
                                                             <form action method="post">
                                                                 <ul>
-                                                                    <li><a type="submit" href="cart.php" data-toggle="tooltip" data-placement="right" title="Mua ngay"><i class="fa fa-shopping-bag"></i></a></li>
+                                                                    <!-- <li><a type="submit" href="cart.php" data-toggle="tooltip" data-placement="right" title="Mua ngay"><i class="fa fa-shopping-bag"></i></a></li> -->
                                                                     <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào yêu thích"><i class="far fa-heart"></i></a></li> -->
                                                                 </ul>
                                                             </form>
@@ -172,7 +172,7 @@
         ?>
             <a class="phantrang" 
                 <?php if ($i == $trang) {
-                echo 'style="background:orange"';
+                echo 'style="background:#d33b33"';
                 } ?> style="margin:0 10px;" href="shop.php?trang=<?php echo $i ?>"><?php echo $i ?>
             </a>
         <?php

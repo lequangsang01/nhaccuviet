@@ -48,7 +48,7 @@
 				<tr class="odd gradeX">
 					<td><?php echo $i; ?></td>
 					<td><?php echo $result_slider['sliderName'] ?></td>
-					<td><img src="uploads/<?php echo $result_slider['slider_image'] ?>" height="120px" width="500px"/></td>		
+					<td><img src="uploads/<?php echo $result_slider['slider_image'] ?>" height="200px" width="500px"/></td>		
 					<td>
 						<?php
 						if($result_slider['type']==1){

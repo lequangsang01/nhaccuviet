@@ -3,81 +3,81 @@
         <div class="main-instagram owl-carousel owl-theme">
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/caio-silva-C7RFkKvThG4-unsplash.jpg" alt="" />
+                    <img src="Images/insta/caio-silva-C7RFkKvThG4-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/catalin-sandru-7SxSkCvVM1U-unsplash.jpg" alt="" />
+                    <img src="Images/insta/catalin-sandru-7SxSkCvVM1U-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/christian-lue-pA6o-AHUTWo-unsplash.jpg" alt="" />
+                    <img src="Images/insta/christian-lue-pA6o-AHUTWo-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/gabriel-barletta--lWcaUVJ39Y-unsplash.jpg" alt="" />
+                    <img src="Images/insta/gabriel-barletta--lWcaUVJ39Y-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/geert-pieters-8QrPJ3Kfie4-unsplash.jpg" alt="" />
+                    <img src="Images/insta/geert-pieters-8QrPJ3Kfie4-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/jacek-dylag-hUHzaiAHuUc-unsplash.jpg" alt="" />
+                    <img src="Images/insta/jacek-dylag-hUHzaiAHuUc-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/joel-wyncott-YY3ijZa2lGQ-unsplash.jpg" alt="" />
+                    <img src="Images/insta/joel-wyncott-YY3ijZa2lGQ-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/matt-moloney-W9H56HxLIec-unsplash.jpg" alt="" />
+                    <img src="Images/insta/matt-moloney-W9H56HxLIec-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/oleg-ivanov-iB_h6EFRiKY-unsplash.jpg" alt="" />
+                    <img src="Images/insta/oleg-ivanov-iB_h6EFRiKY-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="Images2/insta/simon-weisser-phS37wg8cQg-unsplash.jpg" alt="" />
+                    <img src="Images/insta/simon-weisser-phS37wg8cQg-unsplash.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/quangsangle.hn/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -93,45 +93,54 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
-                            <h4>About ThewayShop</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
+                        <h4>NHẠC CỤ VIỆT</h4>
+                            <p>Nếu bạn nhìn đủ sâu, bạn sẽ thấy âm nhạc; trái tim của thiên nhiên là âm nhạc ở khắp nơi.
+                                <br>Âm nhạc chẳng là gì khác ngoài những âm thanh hoang dã được văn minh hoá vào thời gian và giai điệu.
+                                <br>Âm nhạc là nhà hoà giải giữa cuộc sống thể xác và cuộc sống tâm linh.
+                            </p>
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/trung.duc13/"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/trung.duc13/"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/trung.duc13/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/trung.duc13/"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/trung.duc13/"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/trung.duc13/"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/trung.duc13/"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-link">
-                            <h4>Information</h4>
+                        <h4>THÔNG TIN</h4>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Customer Service</a></li>
-                                <li><a href="#">Our Sitemap</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a href="#">Dịch vụ khách hàng</a></li>
+                                <li><a href="#">Sơ đồ trang web của chúng tôi</a></li>
+                                <li><a href="#">Điều khoản </a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                               
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-link-contact">
-                            <h4>Contact Us</h4>
+                            <h4>LIÊN HỆ CHÚNG TÔI</h4>
                             <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
+                                    <p><i class="fas fa-map-marker-alt"></i>1698 Đại lộ Hùng Vương, Ph.Tiên Cát, Thành phố Việt Trì, Phú Thọ
+ </p>
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">1900 9696 63</a></p>
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:duc123zzmm@gmail.com">nhaccuviet304@gmail.com</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fab fa-instagram"></i>Instagram: <a href="https://www.instagram.com/trung.duc13/">NhacCuViet.304</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fab fa-facebook"></i>Facebook: <a href="https://www.facebook.com/profile.php?id=100035026242081">NhacCuViet.304</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -144,7 +153,7 @@
 
     <!-- Start copyright  -->
     <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
+        <p class="footer-company">All Rights Reserved. &copy; 2021 <a href="#">NHACCUVIET</a> Design By :
             <a href="https://html.design/">html design</a></p>
     </div>
     <!-- End copyright  -->

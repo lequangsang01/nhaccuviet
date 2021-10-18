@@ -100,15 +100,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
-                                                        <div class="type-lb">
+                                                        <!-- <div class="type-lb">
                                                             <p class="sale">Sale</p>
-                                                        </div>
+                                                        </div> -->
                                                         <a href="shop-detail.php?proid=<?php echo $result['productId'] ?>"> <img src="admin/uploads/<?php echo $result['image'] ?>" width=220 height=220></a>
                                                         <div class="mask-icon">
-                                                            <ul>
+                                                            <!-- <ul>
                                                                 <li><a href="cart.php" data-toggle="tooltip" data-placement="right" title="Chi tiết"><i class="fa fa-shopping-bag"></i></a></li>
                                                                 <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào yêu thích"><i class="far fa-heart"></i></a></li>
-                                                            </ul>
+                                                            </ul> -->
                                                             <a class="cart" href="shop-detail.php?proid=<?php echo $result['productId'] ?>">Xem chi tiết</a>
                                                         </div>
                                                     </div>

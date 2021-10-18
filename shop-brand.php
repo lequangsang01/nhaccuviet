@@ -98,28 +98,28 @@
                                 <div class="row">
 
                                     <?php
-                                    $brandpr = $br->get_product_by_brand($id);
+                                    $brandpr = $br->getproduct_new($id);
                                     if ($brandpr) {
-                                        while ($result = $brandpr->fetch_assoc()) {
+                                        while ($result_new = $brandpr->fetch_assoc()) {
                                     ?>
                                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
-                                                        <div class="type-lb">
+                                                        <!-- <div class="type-lb">
                                                             <p class="sale">Sale</p>
-                                                        </div>
-                                                        <a href="shop-detail.php?proid=<?php echo $result['productId'] ?>"> <img src="admin/uploads/<?php echo $result['image'] ?>" width=220 height=220></a>
+                                                        </div> -->
+                                                        <a href="shop-detail.php?proid=<?php echo $result_new['productId'] ?>"> <img src="admin/uploads/<?php echo $result_new['image'] ?>" width=220 height=220></a>
                                                         <div class="mask-icon">
-                                                            <ul>
+                                                            <!-- <ul>
                                                                 <li><a href="cart.php" data-toggle="tooltip" data-placement="right" title="Chi tiết"><i class="fa fa-shopping-bag"></i></a></li>
                                                                 <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào yêu thích"><i class="far fa-heart"></i></a></li>
-                                                            </ul>
-                                                            <a class="cart" href="shop-detail.php?proid=<?php echo $result['productId'] ?>">Xem chi tiết</a>
+                                                            </ul> -->
+                                                            <a class="cart" href="shop-detail.php?proid=<?php echo $result_new['productId'] ?>">Xem chi tiết</a>
                                                         </div>
                                                     </div>
                                                     <div class="why-text">
-                                                        <h4><?php echo $result['productName'] ?> </h4>
-                                                        <h5 style="color: red;"> <span class="price"><?php echo $fm->format_currency($result['price']) . "VNĐ" ?></h5>
+                                                        <h4><?php echo $result_new['productName'] ?> </h4>
+                                                        <h5 style="color: red;"> <span class="price"><?php echo $fm->format_currency($result_new['price']) . "VNĐ" ?></h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -175,14 +175,16 @@
         $brandpr = $br->get_product_by_brand($id);
         $product_count = mysqli_num_rows($brandpr);
         $product_button = ceil($product_count / 12);
+        $result_new = $brandpr->fetch_assoc();
+        
         $i = 1;
         // echo '<p>Trang : </p>';
         for ($i = 1; $i <= $product_button; $i++) {
         ?>
             <a class="phantrang" 
                 <?php if ($i == $trang) {
-                echo 'style="background:orange"';
-                } ?> style="margin:0 10px;" href="shop-brand.php?trang=<?php echo $i ?>"><?php echo $i ?>
+                echo 'style="background:#d33b33"';
+                } ?> style="margin:0 10px;" href="shop-brand.php?brandid=<?php echo $result_new['brandId'] ?>?trang=<?php echo $i ?>"><?php echo $i ?>
             </a>
         <?php
 

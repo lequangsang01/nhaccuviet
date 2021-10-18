@@ -46,9 +46,16 @@
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
 			<form class="login100-form validate-form" action="" autocomplete="off" method="POST">
 				<span class="login100-form-title p-b-37">
-					Sign In
+					Nhạc cụ Việt
 				</span>
-
+				<span>
+				<?php
+					if(isset($login_check))
+					{
+						echo $login_check;
+					}
+				?>
+			</span>
 				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter username ">
 					<input class="input100" type="text" name="adminUser" placeholder="username ">
 					<span class="focus-input100"></span>

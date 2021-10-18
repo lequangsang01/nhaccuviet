@@ -94,22 +94,22 @@ if (!isset($_GET['catid']) || $_GET['catid'] == NULL) {
                                 <div class="row">
 
                                     <?php
-                                    $productbycat = $cat->get_product_by_cat($id);
+                                    $productbycat = $cat->getproduct_new_cat($id);
                                     if ($productbycat) {
                                         while ($result = $productbycat->fetch_assoc()) {
                                     ?>
                                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
-                                                        <div class="type-lb">
+                                                        <!-- <div class="type-lb">
                                                             <p class="sale">Sale</p>
-                                                        </div>
+                                                        </div> -->
                                                         <a href="shop-detail.php?proid=<?php echo $result['productId'] ?>"> <img src="admin/uploads/<?php echo $result['image'] ?>" width=220 height=220></a>
                                                         <div class="mask-icon">
-                                                            <ul>
+                                                            <!-- <ul>
                                                                 <li><a href="cart.php" data-toggle="tooltip" data-placement="right" title="Chi tiết"><i class="fa fa-shopping-bag"></i></a></li>
                                                                 <li><a href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào yêu thích"><i class="far fa-heart"></i></a></li>
-                                                            </ul>
+                                                            </ul> -->
                                                             <a class="cart" href="shop-detail.php?proid=<?php echo $result['productId'] ?>">Xem chi tiết</a>
                                                         </div>
                                                     </div>
@@ -168,23 +168,25 @@ if (!isset($_GET['catid']) || $_GET['catid'] == NULL) {
         } else {
             $trang = 1;
         }
-        $productbycat = $cat->get_product_by_cat($id);
-        $product_count = mysqli_num_rows($productbycat);
+        $product_all1 = $cat->get_all_product_cat($id);
+        $product_count = mysqli_num_rows($product_all1);
         $product_button = ceil($product_count / 12);
+        $result = $product_all1->fetch_assoc();
         $i = 1;
         // echo '<p>Trang : </p>';
         for ($i = 1; $i <= $product_button; $i++) {
         ?>
             <a class="phantrang" 
                 <?php if ($i == $trang) {
-                echo 'style="background:orange"';
-                } ?> style="margin:0 10px;" href="shop-cat.php?trang=<?php echo $i ?>"><?php echo $i ?>
+                echo 'style="background:#d33b33"';
+                } ?> style="margin:0 10px;" href="shop-cat.php?catid=<?php echo $result['catId'] ?>?trang=<?php echo $i ?>"><?php echo $i ?>
             </a>
         <?php
 
         }
         ?>
     </div>
+    
 </div>
 <!-- End Shop Page -->
 

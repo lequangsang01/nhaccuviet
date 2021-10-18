@@ -82,28 +82,19 @@ header("Cache-Control: max-age=2592000");
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Now Man
+                                    <i class="fab fa-opencart"></i> Nơi mang đến sự sang trọng
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> 50% - 80% off on Fashion
+                                    <i class="fab fa-opencart"></i> Âm hưởng của cuộc sống
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT20
+                                    <i class="fab fa-opencart"></i> Tinh tế trên từng sản phẩm
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                                    <i class="fab fa-opencart"></i> Nơi của những sự lựa chọn sáng suốt
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Now Man
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 50% - 80% off on Fashion
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT20
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                                    <i class="fab fa-opencart"></i> Tất cả sản phẩm được đảm bảo chính hãng 100%
                                 </li>
                             </ul>
                         </div>
@@ -161,15 +152,16 @@ header("Cache-Control: max-age=2592000");
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img src="images2/logo.jpg" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="index.php"><img src="images/logo.jpg" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="index.php">Trang chủ</a></li>
+                        <li class=""><a class="nav-link" href="index.php">Trang chủ</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#">Về chúng tôi</a></li> -->
+                        <li class=""><a class="nav-link"href="shop.php">Tất cả sản phẩm</a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arro" data-toggle="dropdown">Sản Phẩm +</a>
                             <ul class="dropdown-menu">
@@ -186,12 +178,27 @@ header("Cache-Control: max-age=2592000");
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle arro" data-toggle="dropdown">Của hàng +</a>
+                            <a href="#" class="nav-link dropdown-toggle arro" data-toggle="dropdown">Thương Hiệu+</a>
+                            <ul class="dropdown-menu">
+                                <?php
+                               $brand = $br->show_brand_home();
+                                if ($brand) {
+                                    while ($result_new = $brand->fetch_assoc()) {
+                                ?>
+                                        <li><a href="shop-brand.php?brandid=<?php echo $result_new['brandId'] ?>"> <?php echo $result_new['brandName'] ?></a></li>
+                                <?php
+                                    }
+                                }
+                                ?>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arro" data-toggle="dropdown">Tài khoản</a>
                             <ul class="dropdown-menu">
                                 <li><a href="cart.php">Giỏ hàng</a></li>
                                 <li><a href="tkcuatoi.php">Tài khoản của tôi</a></li>
                                 <!-- <li><a href="wishlist.php">Danh sách yêu thích</a></li> -->
-                                <li><a href="shop.php">Tất cả sản phẩm</a></li>
+                                
                             </ul>
                         </li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#">Dịch Vụ</a></li>
@@ -233,7 +240,6 @@ header("Cache-Control: max-age=2592000");
             <form action="shop-search.php"method="post">
             <div class="input-group">
                 <input type="text" class="form-control" name="tukhoa"placeholder="Click Enter để tìm kiếm">
-                <!-- <input class="input-group-addon" type="submit" name="search_product" value="Tìm kiếm  ">  -->
                 <button class="input-group-addon"type="submit" name="search_product"> <i class="fa fa-search"></i></button> <p></p>
                 <span class="input-group-addon close-search" style= "margin-left: 20px" ><i class="fa fa-times"></i></span>
             </div></form>
